@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset {
+            width: 300px;
+            margin: auto;
+        }
+        .border{
+            margin: auto;
+            border-style: solid;
+            width: 300px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<style>
+
+</style>
+
+<body>
+    <form action="insert_fueldetail.php" method="post">
+        <div class="border">
+
+
+            <legend>Vehicle Owner Details</legend>
+
+            <label id="name">Owner Name:</label>
+            <br>
+            <input type="text" name="name" required placeholder="Enter your Name">
+            <br>
+            <label>Mobile Number :</label>
+            <br>
+            <input type="text" name="mobileNumber" id="">
+            <br>
+            <label>Email : </label>
+            <br>
+            <input type="email" name="email" id="">
+            <br>
+            <label for="">Address</label>
+            <br>
+            <textarea cols="30" rows="4" name="address"></textarea>
+        </div>
+        <br><br>
+        <fieldset>
+            <legend>Vehicle Details</legend>
+
+            <label for="">Fuel type :</label><br>
+            <select name="fuel_type" id="">
+                <option value="petrol"> petrol</option>
+                <option value="disal"> disal</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Vehicle Number :</label><br> <input type="text" name="v_number" id=""><br><br>
+
+            <label for="">Air condition</label><br>
+
+            <input type="radio" name="air" value="with_ac"><label>With Ac</label> <input type="radio" name="air"
+                value="without_ac"><label for="">Without Ac</label>
+            <br><br>
+
+            <button type="submit" name="submit">Submint</button>
+
+
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>
