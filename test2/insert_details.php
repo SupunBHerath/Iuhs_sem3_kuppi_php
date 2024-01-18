@@ -29,14 +29,20 @@ if (isset($_POST['submit'])) {
     }
 
     $sql = "INSERT INTO abc_details (username, number, option, quantity, price) VALUES (?,?,?,?,?)";
-    $stmt =$conn->prepare($sql);
-    $stmt->bind_param("sssdd", $username, $mobileNumber, $items, $quantity, $totalprice);
-    $stmt->execute();
-    // mysqli_execute($stmt);
-    $stmt->close();
+    // $stmt =$conn->prepare($sql);
+    // $stmt->bind_param("sssii", $username, $mobileNumber, $items, $quantity, $totalprice);
+    // $stmt->execute();
+    // $stmt->close();
+
+    $stmt = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt, "sssii", $username, $mobileNumber, $items, $quantity, $totalprice);
+    mysqli_execute($stmt);
+    mysqli_stmt_close($stmt);
+
+
+
     header('location:display.php');
 
-    $conn->query($sql);
 
 
 
