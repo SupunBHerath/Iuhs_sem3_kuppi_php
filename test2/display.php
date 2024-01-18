@@ -22,18 +22,23 @@
             text-align: left;
             padding: 8px;
         }
+      
+        th {
+            color: red;
+            
+        }
     </style>
 </head>
 
 <body>
     <table>
         <tr>
-            <th>Id</th>
-            <th>user name</th>
-            <th>number</th>
-            <th>option</th>
-            <th>quantity</th>
-            <th>price</th>
+            <th>User ID </th>
+            <th>User Name</th>
+            <th>Mobile Number</th>
+            <th>Select Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
         </tr>
         <?php
         $getsql = "SELECT * FROM abc_details ";
