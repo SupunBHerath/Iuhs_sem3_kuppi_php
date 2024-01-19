@@ -1,4 +1,4 @@
-# Iuhs_sem3_kuppi_php
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Information Form</title>
+    # Iuhs_sem3_kuppi_php
     <style>
         form {
             max-width: 400px;
